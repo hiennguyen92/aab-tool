@@ -34,8 +34,8 @@
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/main.png" width="600" alt="AABTool Main Window">
-  <img src="screenshots/main2.png" width="600" alt="AABTool Main Window">
+  <img src="Screenshots/main.png" width="600" alt="AABTool Main Window">
+  <img src="Screenshots/main2.png" width="600" alt="AABTool Main Window">
 </p>
 
 ## Requirements
