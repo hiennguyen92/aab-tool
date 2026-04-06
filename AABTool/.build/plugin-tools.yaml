@@ -1,0 +1,83 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "AABTool-arm64-apple-macosx15.0-release.exe": ["<AABTool-arm64-apple-macosx15.0-release.exe>"]
+  "AABTool-arm64-apple-macosx15.0-release.module": ["<AABTool-arm64-apple-macosx15.0-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<AABTool-arm64-apple-macosx15.0-release.exe>","<AABTool-arm64-apple-macosx15.0-release.module>"]
+  "test": ["<AABTool-arm64-apple-macosx15.0-release.exe>","<AABTool-arm64-apple-macosx15.0-release.module>"]
+default: "main"
+nodes:
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/AABToolApp.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/BundletoolRunner.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/ContentView.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/HistoryManager.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/MainViewModel.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/DerivedSources/resource_bundle_accessor.swift"]
+    outputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/sources"]
+    description: "Write auxiliary file /Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/sources"
+
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.swift.o"]
+    outputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.product/Objects.LinkFileList"
+
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/AppIcon.png":
+    tool: copy-tool
+    inputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/Resources/AppIcon.png"]
+    outputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/AppIcon.png"]
+    description: "Copying /Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/Resources/AppIcon.png"
+
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/bundletool.jar":
+    tool: copy-tool
+    inputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/Resources/bundletool.jar"]
+    outputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/bundletool.jar"]
+    description: "Copying /Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/Resources/bundletool.jar"
+
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/swift-version--13AAEA3DEC2FADF0.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/swift-version--13AAEA3DEC2FADF0.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/swift-version--13AAEA3DEC2FADF0.txt"
+
+  "<AABTool-arm64-apple-macosx15.0-release.exe>":
+    tool: phony
+    inputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool"]
+    outputs: ["<AABTool-arm64-apple-macosx15.0-release.exe>"]
+
+  "<AABTool-arm64-apple-macosx15.0-release.module>":
+    tool: phony
+    inputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/Modules/AABTool.swiftmodule"]
+    outputs: ["<AABTool-arm64-apple-macosx15.0-release.module>"]
+
+  "AABTool-arm64-apple-macosx15.0-release.module-resources":
+    tool: phony
+    inputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/AppIcon.png","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/bundletool.jar"]
+    outputs: ["<AABTool-arm64-apple-macosx15.0-release.module-resources>"]
+
+  "C.AABTool-arm64-apple-macosx15.0-release.exe":
+    tool: shell
+    inputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.product/Objects.LinkFileList"]
+    outputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool"]
+    description: "Linking ./.build/arm64-apple-macosx/release/AABTool"
+    args: ["/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release","-o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool","-module-name","AABTool","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_AABTool_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-plugin-path","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.AABTool-arm64-apple-macosx15.0-release.module":
+    tool: shell
+    inputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/AABToolApp.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/BundletoolRunner.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/ContentView.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/HistoryManager.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/MainViewModel.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/DerivedSources/resource_bundle_accessor.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/swift-version--13AAEA3DEC2FADF0.txt","<AABTool-arm64-apple-macosx15.0-release.module-resources>","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/sources"]
+    outputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.swift.o","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/Modules/AABTool.swiftmodule"]
+    description: "Compiling Swift Module 'AABTool' (6 sources)"
+    args: ["/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","AABTool","-emit-dependencies","-emit-module","-emit-module-path","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/Modules/AABTool.swiftmodule","-output-file-map","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/output-file-map.json","-whole-module-optimization","-num-threads","10","-c","@/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/sources","-I","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx14.0","-whole-module-optimization","-num-threads","10","-serialize-diagnostics","-O","-j10","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE","-module-cache-path","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","AABTool_main","-color-diagnostics","-swift-version","5","-plugin-path","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-F","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk","-Xcc","-F","-Xcc","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","aabtool"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Package.swift","/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

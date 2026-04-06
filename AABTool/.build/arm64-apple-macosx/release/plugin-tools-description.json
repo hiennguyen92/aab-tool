@@ -1,0 +1,371 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/AppIcon.png" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/Resources/AppIcon.png"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/AppIcon.png"
+        }
+      ]
+    },
+    "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/bundletool.jar" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/Resources/bundletool.jar"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool_AABTool.bundle/bundletool.jar"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.AABTool-arm64-apple-macosx15.0-release.module" : {
+      "executable" : "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/sources",
+      "importPath" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/AABToolApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/BundletoolRunner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/HistoryManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/MainViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/swift-version--13AAEA3DEC2FADF0.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<AABTool-arm64-apple-macosx15.0-release.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "AABTool",
+      "moduleOutputPath" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/Modules/AABTool.swiftmodule",
+      "objects" : [
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.swift.o",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.swift.o",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.swift.o",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.swift.o",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.swift.o",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "10",
+        "-serialize-diagnostics",
+        "-O",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "AABTool_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "aabtool"
+      ],
+      "outputFileMapPath" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/Modules/AABTool.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/AABToolApp.swift",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/BundletoolRunner.swift",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/ContentView.swift",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/HistoryManager.swift",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/MainViewModel.swift",
+        "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "AABTool" : [
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "AABTool",
+      "-package-name",
+      "aabtool",
+      "-c",
+      "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/AABToolApp.swift",
+      "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/BundletoolRunner.swift",
+      "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/ContentView.swift",
+      "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/HistoryManager.swift",
+      "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/MainViewModel.swift",
+      "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "10",
+      "-serialize-diagnostics",
+      "-O",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "AABTool_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "aabtool",
+      "-driver-use-frontend-path",
+      "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "AABTool" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/AABToolApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/BundletoolRunner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/HistoryManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/MainViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/sources"
+    },
+    "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.product/Objects.LinkFileList"
+    },
+    "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/swift-version--13AAEA3DEC2FADF0.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/hiennguyen92/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/swift-version--13AAEA3DEC2FADF0.txt"
+    }
+  }
+}

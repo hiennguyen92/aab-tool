@@ -1,0 +1,43 @@
+{
+  "": {
+    "dependencies": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABTool.d",
+    "object": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABTool.o",
+    "swift-dependencies": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/master.swiftdeps"
+  },
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/AABToolApp.swift": {
+    "object": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.swift.o",
+    "swiftmodule": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.swiftdeps",
+    "diagnostics": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/AABToolApp.dia"
+  },
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/BundletoolRunner.swift": {
+    "object": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.swift.o",
+    "swiftmodule": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.swiftdeps",
+    "diagnostics": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/BundletoolRunner.dia"
+  },
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/ContentView.swift": {
+    "object": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.swift.o",
+    "swiftmodule": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.swiftdeps",
+    "diagnostics": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/ContentView.dia"
+  },
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/HistoryManager.swift": {
+    "object": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.swift.o",
+    "swiftmodule": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.swiftdeps",
+    "diagnostics": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/HistoryManager.dia"
+  },
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/Sources/AABTool/MainViewModel.swift": {
+    "object": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.swift.o",
+    "swiftmodule": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.swiftdeps",
+    "diagnostics": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/MainViewModel.dia"
+  },
+  "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/DerivedSources/resource_bundle_accessor.swift": {
+    "object": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Volumes/Documents/1-Local-Projects/aab-tool/AABTool/.build/arm64-apple-macosx/release/AABTool.build/resource_bundle_accessor.dia"
+  }
+}
