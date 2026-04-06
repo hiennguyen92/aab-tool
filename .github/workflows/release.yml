@@ -6,6 +6,9 @@ on:
       - 'v*'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Build AABTool.app
@@ -75,11 +78,13 @@ jobs:
           name: AABTool
           path: dist
 
+      - name: List files
+        run: find dist -type f
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            dist/AABTool/dist/AABTool.dmg
+          files: dist/**/AABTool.dmg
           generate_release_notes: true
           draft: false
           prerelease: false
