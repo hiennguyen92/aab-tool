@@ -1,0 +1,85 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build AABTool.app
+    runs-on: macos-14
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Build Release
+        working-directory: AABTool
+        run: swift build -c release
+
+      - name: Create App Bundle
+        working-directory: AABTool
+        run: |
+          APP_NAME="AABTool"
+          BUILD_DIR=".build/release"
+          APP_DIR="dist/$APP_NAME.app"
+          CONTENTS_DIR="$APP_DIR/Contents"
+          MACOS_DIR="$CONTENTS_DIR/MacOS"
+          RESOURCES_DIR="$CONTENTS_DIR/Resources"
+
+          mkdir -p "$MACOS_DIR"
+          mkdir -p "$RESOURCES_DIR"
+
+          cp "$BUILD_DIR/$APP_NAME" "$MACOS_DIR/"
+          cp -R "$BUILD_DIR/${APP_NAME}_${APP_NAME}.bundle" "$RESOURCES_DIR/"
+          
+          if [ -f "AppIcon.icns" ]; then
+            cp AppIcon.icns "$RESOURCES_DIR/"
+          fi
+          
+          cp Info.plist "$CONTENTS_DIR/Info.plist"
+
+      - name: Create DMG
+        working-directory: AABTool
+        run: |
+          hdiutil create -volname "AABTool" \
+            -srcfolder dist/AABTool.app \
+            -ov -format UDZO \
+            dist/AABTool.dmg
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AABTool
+          path: |
+            AABTool/dist/AABTool.app
+            AABTool/dist/AABTool.dmg
+
+  release:
+    name: Create Release
+    needs: build
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: AABTool
+          path: dist
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/AABTool/dist/AABTool.dmg
+          generate_release_notes: true
+          draft: false
+          prerelease: false
